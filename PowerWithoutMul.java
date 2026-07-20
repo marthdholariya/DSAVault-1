@@ -12,7 +12,7 @@ public class PowerWithoutMul {
 
         //m and n are positive integers only...
 
-        System.out.print("Answer is: "+function(n, m));
+        System.out.println("Answer is: "+function(n, m));
 
         sc.close();
     }
@@ -21,12 +21,15 @@ public class PowerWithoutMul {
         int sum=0,a=n;;
 
         for (int i = 1; i < m; i++){
+
             sum=0;
+
             for (int j = 1; j <= n; j++) {
                 
                 sum = sum + a;
 
             }
+
             a=sum;
         }
 
