@@ -18,6 +18,7 @@ public class PowerWithoutMul {
     }
 
     static int function(int n, int m){
+        
         int sum=0,a=n;;
 
         for (int i = 1; i < m; i++){
