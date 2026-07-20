@@ -10,18 +10,27 @@ public class PowerWithoutMul {
         int n = sc.nextInt();
         int m = sc.nextInt();
 
-        function(n,m);
+        //m and n are positive integers only...
+
+        System.out.print("Answer is: "+function(n, m));
 
         sc.close();
     }
 
-    static void function(int n, int m){
+    static int function(int n, int m){
+        int sum=0,a=n;;
 
-        for (int i=0; i<n; i++){
-            for (int j = 0; j < m; j++) {
+        for (int i = 1; i < m; i++){
+            sum=0;
+            for (int j = 1; j <= n; j++) {
                 
+                sum = sum + a;
+
             }
+            a=sum;
         }
+
+        return sum;
 
     }
 }
